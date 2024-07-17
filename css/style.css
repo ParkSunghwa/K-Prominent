@@ -1,0 +1,140 @@
+/* Normalizing */
+*{
+    margin:0;
+    padding:0;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+ul,
+li {
+    list-style: none;
+}
+
+/* library */
+
+
+.wrap {
+    width: 100%;
+}
+
+.con {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wh_inherit {
+    width: 100%;
+    height: 100%;
+}
+
+.font_bold {
+    font-family: "suncheonB";
+}
+
+.box_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box_image>img {
+    display: block;
+    width: 100%;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.btn {
+    cursor:pointer;
+}
+
+/* styles */
+
+.section01 {
+    position:relative;
+}
+
+.section01-container_buttons{
+    width:100%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:calc(100% * (300/754));
+    display:flex;
+    justify-content: center;
+    gap:calc(100% * (10/1920));
+}
+
+.section01-button_detail{
+    width:calc(100% * (206/1920));
+}
+
+.section01-button_shortcut{
+    width:calc(100% * (189/1920));
+}
+
+.section06{
+    background-color:#ffffff;
+    padding:0 calc(100% * (420/1920));
+    padding-top:calc(100% * (100/1920));
+    padding-bottom:calc(100% * (100/1920));
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section06-header {
+    width:100%;
+}
+
+.section06-wrap_form{
+    width:100%;
+    margin-top:calc(100% * (40/1080));
+
+
+    background-color:#eeeeee;
+}
+
+.section06-form{
+    width:calc(100% * (432/1080));
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    
+    height:200px;
+    background-color:#fefefe;
+}
+
+.section06-form-item{
+    width:100%;
+}
+
+.section06-form-item-title {
+    width:100%;
+    display:inline-block;
+    font-size:14px;
+}
+
+.section06-form-item-input {
+    width:100%;
+    border:1px solid #dddddd;
+    border-radius:12px;
+    box-sizing:border-box;
+    font-size:16px;
+    padding: calc(100% * (12/430)) calc(100% * (20/430));
+}
+.section06-form-item-input::placeholder {
+    color:#888888;
+}
