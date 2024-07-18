@@ -1,140 +1,376 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 /* Normalizing */
-*{
-    margin:0;
-    padding:0;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  box-sizing: border-box;
 }
-a{
-    color:inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* library */
 
-
 .wrap {
-    width: 100%;
+  width: 100%;
 }
 
 .con {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .wh_inherit {
-    width: 100%;
-    height: 100%;
-}
-
-.font_bold {
-    font-family: "suncheonB";
+  width: 100%;
+  height: 100%;
 }
 
 .box_image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.box_image>img {
-    display: block;
-    width: 100%;
+.box_image > img {
+  display: block;
+  width: 100%;
 }
 
 .align_center {
-    text-align: center;
+  text-align: center;
 }
 
 .btn {
-    cursor:pointer;
+  cursor: pointer;
+}
+
+.font_spoqa {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.color_blue {
+  color: #4f57f7;
+}
+
+.color_green {
+  color: #00eb8b;
+}
+
+.color_black_main {
+  color: #222222;
+}
+
+.color_black_sub {
+  color: #333333;
+}
+
+.color_gray {
+  color: #555555;
+}
+
+.color_white {
+  color: #ffffff;
+}
+
+.bg_blue {
+  background-color: #4f57f7;
+}
+
+.bg_green {
+  background-color: #00eb8b;
+}
+
+.bg_black_main {
+  background-color: #222222;
+}
+
+.bg_black_sub {
+  background-color: #333333;
+}
+
+.bg_gray {
+  background-color: #555555;
+}
+
+.bg_white {
+  background-color: #ffffff;
 }
 
 /* styles */
 
+.mo {
+  display: none;
+}
+
+/* pc start */
+
 .section01 {
-    position:relative;
+  position: relative;
 }
 
-.section01-container_buttons{
-    width:100%;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:calc(100% * (300/754));
-    display:flex;
-    justify-content: center;
-    gap:calc(100% * (10/1920));
+.section01-container_buttons {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% * (300 / 754));
+  display: flex;
+  justify-content: center;
+  gap: calc(100% * (10 / 1920));
 }
 
-.section01-button_detail{
-    width:calc(100% * (206/1920));
+.section01-button {
+  width: calc(100% * (206 / 1920));
 }
 
-.section01-button_shortcut{
-    width:calc(100% * (189/1920));
+.section06 {
+  background-color: #ffffff;
+  padding-top: calc(100% * (100 / 1920));
+  padding-bottom: calc(100% * (100 / 1920));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.section06{
-    background-color:#ffffff;
-    padding:0 calc(100% * (420/1920));
-    padding-top:calc(100% * (100/1920));
-    padding-bottom:calc(100% * (100/1920));
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
 .section06-header {
-    width:100%;
+  width: 100%;
+  padding: 0 calc(100% * (420 / 1920));
 }
 
-.section06-wrap_form{
-    width:100%;
-    margin-top:calc(100% * (40/1080));
-
-
-    background-color:#eeeeee;
+.section06-form {
+  width: 432px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.section06-form{
-    width:calc(100% * (432/1080));
-    margin:0 auto;
-    display:flex;
-    flex-direction: column;
-    
-    height:200px;
-    background-color:#fefefe;
-}
-
-.section06-form-item{
-    width:100%;
+.section06-form-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
 }
 
 .section06-form-item-title {
-    width:100%;
-    display:inline-block;
-    font-size:14px;
+  font-size: 14px;
 }
 
 .section06-form-item-input {
-    width:100%;
-    border:1px solid #dddddd;
-    border-radius:12px;
-    box-sizing:border-box;
-    font-size:16px;
-    padding: calc(100% * (12/430)) calc(100% * (20/430));
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 20px;
 }
+
 .section06-form-item-input::placeholder {
-    color:#888888;
+  color: #888888;
+}
+
+.section06-form-container_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.section06-form-button_type {
+  flex: 1 0 0;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888888;
+  background-color: white;
+}
+
+.section06-form-button_type.active {
+  border: none;
+  background-color: #4f57f7;
+  color: #ffffff;
+}
+
+.section06-form-select {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.section06-form-item:has(.section06-form-select-container_options.active)
+  > .section06-form-select
+  > img {
+  transform: rotate(180deg);
+}
+
+.section06-form-select-selected {
+  font-size: 16px;
+  color: #888888;
+}
+
+.section06-form-select-container_options {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  padding: 10px 0;
+  background-color: #ffffff;
+  display: none;
+}
+
+.section06-form-select-container_options.active {
+  display: block;
+}
+
+.section06-form-select-option {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.section06-form-select-option:hover {
+  background-color: #dddddd;
+}
+
+.section06-form-container_checkbox {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.section06-form-checkbox {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section06-form-checkbox > img {
+  display: none;
+}
+
+.section06-form-checkbox-label {
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.section06-form-container_checkbox.active > .section06-form-checkbox {
+  border: none;
+  background-color: #4f57f7;
+}
+
+.section06-form-container_checkbox.active > .section06-form-checkbox > img {
+  display: block;
+}
+
+.section06-form-info {
+  font-size: 14px;
+  color: #888888;
+}
+
+.section06-form-button_confirm {
+  width: 100%;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4f57f7;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.section06-form-button_confirm.active_name.active_phone.active_type.active_location.active_agreement {
+  opacity: 1;
+}
+
+/* pc end */
+
+/* mobile start */
+
+.mo .section01-container_buttons {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% * (180 / 640));
+  display: flex;
+  justify-content: center;
+  gap: calc(100% * (10 / 360));
+}
+
+.mo .section01-button {
+  width: calc(100% * (160 / 360));
+}
+
+.mo .section06 {
+  background-color: #ffffff;
+  padding: 0 calc(100% * (16 / 360));
+  padding-top: calc(100% * (100 / 360));
+  padding-bottom: calc(100% * (100 / 360));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mo .section06-header {
+  padding: 0;
+}
+
+.mo .section06-form {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* mobile end */
+
+@media screen and (max-width: 720px) {
+  .pc {
+    display: none;
+  }
+
+  .mo {
+    display: block;
+  }
 }
