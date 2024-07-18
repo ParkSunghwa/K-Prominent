@@ -30,6 +30,17 @@ $(document).ready(function () {
         }
     });
 
+    $('.mo .section06-form-item-input_name, .mo .section06-form-item-input_phone').on('change keyup paste', function () {
+        name = $('.mo .section06-form-item-input_name').val();
+        phone = $('.mo .section06-form-item-input_phone').val();
+        if (name) {
+            $(".section06-form-button_confirm").addClass('active_name');
+        }
+        if (phone) {
+            $(".section06-form-button_confirm").addClass('active_phone');
+        }
+    });
+
     $('.section06-form-button_type').click(function () {
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
