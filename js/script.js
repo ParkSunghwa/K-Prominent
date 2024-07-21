@@ -107,9 +107,13 @@ $(document).ready(function () {
                 .then(
                     (response) => {
                         console.log("SUCCESS!", response.status, response.text);
+                        alert('신청이 완료되었습니다!');
+                        window.location.reload();
                     },
                     (error) => {
                         console.log("FAILED...", error);
+                        alert('잠시 오류로 인해 신청이 실패하였습니다. 새로고침 후 다시 신청해주세요.');
+                        window.location.reload();
                     }
                 );
         } else {
@@ -123,7 +127,7 @@ $(document).ready(function () {
             (windowWidth >= 720 && windowWidthNow < 720) ||
             (windowWidthNow >= 720 && windowWidth < 720)
         ) {
-            window.location.href = window.location.href;
+            window.location.reload();
         } else {
             windowWidth = windowWidthNow;
         }

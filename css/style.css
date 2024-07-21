@@ -19,6 +19,9 @@ ul,
 li {
   list-style: none;
 }
+body {
+  position:relative;
+}
 
 /* library */
 
